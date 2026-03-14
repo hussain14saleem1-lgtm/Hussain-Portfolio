@@ -466,14 +466,21 @@
           <a href="#" class="contact-link"><span>📍</span><span>Benghazi, Libya</span></a>
         </div>
       </div>
-      <div class="contact-form">
-        <div class="form-group"><label>Name</label><input type="text" placeholder="Your name" /></div>
-        <div class="form-group"><label>Email</label><input type="email" placeholder="you@example.com" /></div>
-        <div class="form-group"><label>Message</label><textarea rows="4"
-            placeholder="Tell me about your project..."></textarea></div>
-        <button class="btn btn-primary" style="align-self:flex-start;"
-          onclick="this.textContent='Message sent ✓';this.style.background='#2de0ac';">Send Message</button>
-      </div>
+      <form class="contact-form" action="https://formspree.io/f/mnjgbndl" method="POST">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="4" name="message" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send Message</button>
+      </form>
     </div>
   </section>
 
