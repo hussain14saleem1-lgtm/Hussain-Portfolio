@@ -9,7 +9,6 @@
 
     const canvas = document.createElement('canvas');
     canvas.id = 'spinjitzu-canvas';
-    // z-index:1 keeps it strictly behind all content (sections are z-index:10)
     canvas.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1;opacity:0.55';
     document.body.prepend(canvas);
 

@@ -2,14 +2,12 @@ function toggleCert(id) {
   const clicked = document.getElementById(id);
   const isOpen = clicked.classList.contains('open');
 
-  // close all
-  document.querySelectorAll('.cert-card').forEach(c => {
+  document.querySelectorAll('.cert-item').forEach(c => {
     c.classList.remove('open');
     const panel = c.querySelector('.cert-img-panel');
     if (panel) panel.style.maxHeight = '0';
   });
 
-  // open only this one if it wasn't already open
   if (!isOpen) {
     clicked.classList.add('open');
     const panel = clicked.querySelector('.cert-img-panel');
