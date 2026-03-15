@@ -1004,6 +1004,32 @@ footer {
   transform: none
 }
 
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid rgba(74, 247, 196, 0.25);
+  border-radius: 4px;
+  background: rgba(74, 247, 196, 0.06);
+  transition: all 0.2s;
+  vertical-align: middle
+}
+
+.linkedin-btn:hover {
+  background: rgba(74, 247, 196, 0.14);
+  border-color: var(--accent);
+  transform: translateY(-1px)
+}
+
+.linkedin-btn svg {
+  flex-shrink: 0
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
