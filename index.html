@@ -38,9 +38,8 @@
         &nbsp;·&nbsp;
         (+218) 916 765 318
         &nbsp;·&nbsp;
-        <a href="https://www.linkedin.com/in/hussain-saleem-801879388/" target="_blank" class="linkedin-btn"
-          title="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-URL" target="_blank" class="linkedin-btn" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
             <path
               d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
           </svg>
@@ -333,6 +332,7 @@
       <button class="filter-btn" onclick="filterProjects('uni',this)">University</button>
     </div>
     <div class="projects-grid" id="projects-grid">
+
       <div class="project-card reveal" data-cat="uiux">
         <div class="project-top">
           <div class="project-icon">🗂️</div><span class="project-badge badge-progress">In Progress</span>
@@ -348,6 +348,7 @@
         <div class="project-stack"><span class="stack-tag">Figma</span><span class="stack-tag">UI/UX</span><span
             class="stack-tag">Google Dev Team</span></div>
       </div>
+
       <div class="project-card reveal" style="transition-delay:0.06s" data-cat="live">
         <div class="project-top">
           <div class="project-icon">🎮</div><span class="project-badge badge-live">Live</span>
@@ -355,14 +356,29 @@
         <div class="project-title">GDG Arcade — TechZaar</div>
         <div class="project-desc">
           <ul>
-            <li>Website featuring 4 interactive games.</li>
+            <li>4 interactive games: Hangman, Memory Cards, Python Quiz, Roulette.</li>
             <li>Supabase auth for user sign-up and login.</li>
             <li>Responsive design with smooth, engaging UX.</li>
           </ul>
         </div>
+        <div class="project-preview">
+          <div class="project-preview-bar">
+            <span class="preview-dot" style="background:#ff5f57"></span>
+            <span class="preview-dot" style="background:#febc2e"></span>
+            <span class="preview-dot" style="background:#28c840"></span>
+            <span class="preview-url">gdg-g.vercel.app</span>
+            <a href="https://gdg-g.vercel.app/home.html" target="_blank" class="preview-open-btn"
+              onclick="event.stopPropagation()">Open ↗</a>
+          </div>
+          <div class="preview-click-area" onclick="togglePreview(this)">
+            <iframe data-src="https://gdg-g.vercel.app/home.html" class="project-iframe" title="GDG Arcade"></iframe>
+            <div class="preview-overlay"><span>▶ Click to preview</span></div>
+          </div>
+        </div>
         <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span
             class="stack-tag">JavaScript</span><span class="stack-tag">Supabase</span></div>
       </div>
+
       <div class="project-card reveal" style="transition-delay:0.12s" data-cat="live">
         <div class="project-top">
           <div class="project-icon">🗺️</div><span class="project-badge badge-live">Live</span>
@@ -375,9 +391,25 @@
             <li>Helps users explore event content and locations.</li>
           </ul>
         </div>
+        <div class="project-preview">
+          <div class="project-preview-bar">
+            <span class="preview-dot" style="background:#ff5f57"></span>
+            <span class="preview-dot" style="background:#febc2e"></span>
+            <span class="preview-dot" style="background:#28c840"></span>
+            <span class="preview-url">gdg-techzaar.vercel.app</span>
+            <a href="https://gdg-techzaar.vercel.app/index.html" target="_blank" class="preview-open-btn"
+              onclick="event.stopPropagation()">Open ↗</a>
+          </div>
+          <div class="preview-click-area" onclick="togglePreview(this)">
+            <iframe data-src="https://gdg-techzaar.vercel.app/index.html" class="project-iframe"
+              title="TechZaar"></iframe>
+            <div class="preview-overlay"><span>▶ Click to preview</span></div>
+          </div>
+        </div>
         <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span
             class="stack-tag">JavaScript</span><span class="stack-tag">3D Map</span></div>
       </div>
+
       <div class="project-card reveal" style="transition-delay:0.18s" data-cat="ai">
         <div class="project-top">
           <div class="project-icon">🤖</div><span class="project-badge badge-nvidia">NVIDIA</span>
@@ -393,6 +425,7 @@
         <div class="project-stack"><span class="stack-tag">Python</span><span class="stack-tag">Deep
             Learning</span><span class="stack-tag">Neural Networks</span></div>
       </div>
+
       <div class="project-card reveal" style="transition-delay:0.24s" data-cat="live">
         <div class="project-top">
           <div class="project-icon">🕹️</div><span class="project-badge badge-live">QA</span>
@@ -408,6 +441,7 @@
         <div class="project-stack"><span class="stack-tag">QA Testing</span><span class="stack-tag">Bug
             Reporting</span><span class="stack-tag">Usability</span><span class="stack-tag">Performance</span></div>
       </div>
+
       <div class="project-card reveal" style="transition-delay:0.06s" data-cat="uni">
         <div class="project-top">
           <div class="project-icon">📋</div><span class="project-badge badge-uni">University</span>
@@ -423,6 +457,7 @@
         <div class="project-stack"><span class="stack-tag">SRS</span><span class="stack-tag">UML</span><span
             class="stack-tag">Use Cases</span><span class="stack-tag">Team</span></div>
       </div>
+
       <div class="project-card reveal" style="transition-delay:0.12s" data-cat="uni">
         <div class="project-top">
           <div class="project-icon">🏗️</div><span class="project-badge badge-uni">University</span>
@@ -437,6 +472,7 @@
         <div class="project-stack"><span class="stack-tag">UML</span><span class="stack-tag">System Design</span><span
             class="stack-tag">Role-Based</span><span class="stack-tag">Team</span></div>
       </div>
+
       <div class="project-card reveal" style="transition-delay:0.18s" data-cat="uni">
         <div class="project-top">
           <div class="project-icon">🗄️</div><span class="project-badge badge-uni">University</span>
@@ -452,6 +488,7 @@
         <div class="project-stack"><span class="stack-tag">SQL</span><span class="stack-tag">Database Design</span><span
             class="stack-tag">Relational DB</span><span class="stack-tag">Team</span></div>
       </div>
+
       <div class="project-card reveal" style="transition-delay:0.24s" data-cat="uni">
         <div class="project-top">
           <div class="project-icon">📚</div><span class="project-badge badge-uni">University</span>
@@ -467,6 +504,7 @@
         <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span
             class="stack-tag">JavaScript</span><span class="stack-tag">Team</span></div>
       </div>
+
       <div class="project-card reveal" style="transition-delay:0.30s" data-cat="uni">
         <div class="project-top">
           <div class="project-icon">🗓️</div><span class="project-badge badge-uni">University</span>
@@ -482,6 +520,7 @@
         <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span
             class="stack-tag">JavaScript</span><span class="stack-tag">Team</span></div>
       </div>
+
     </div>
   </section>
 
@@ -494,13 +533,12 @@
           <a href="mailto:hussain14saleem1@gmail.com"
             class="contact-link"><span>✉</span><span>hussain14saleem1@gmail.com</span></a>
           <a href="tel:+218916765318" class="contact-link"><span>📞</span><span>(+218) 916 765 318</span></a>
-          <a href="https://www.linkedin.com/in/hussain-saleem-801879388/" target="_blank" class="contact-link">
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-URL" target="_blank" class="contact-link">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                fill="currentColor">
                 <path
                   d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-            </span>
+              </svg></span>
             <span>LinkedIn Profile</span>
           </a>
           <a href="#" class="contact-link"><span>📍</span><span>Benghazi, Libya</span></a>

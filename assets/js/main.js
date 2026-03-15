@@ -15,6 +15,21 @@ function toggleCert(id) {
   }
 }
 
+function togglePreview(el) {
+  const isLoaded = el.classList.contains('loaded');
+  const iframe = el.querySelector('.project-iframe');
+
+  if (isLoaded) {
+    el.classList.remove('loaded');
+    iframe.classList.remove('open');
+    setTimeout(() => { iframe.src = ''; }, 420);
+  } else {
+    iframe.src = iframe.dataset.src;
+    el.classList.add('loaded');
+    iframe.classList.add('open');
+  }
+}
+
 function filterProjects(cat, btn) {
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
